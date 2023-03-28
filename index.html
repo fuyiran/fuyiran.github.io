@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="负一然" content="width=, initial-scale=1.0">
+    <title>负一然</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .shell{
+        height: 100vh;
+        overflow-x: hidden;
+        perspective: 3px;
+    }
+    .shell div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: 30px;
+        letter-spacing: 2px;
+    }
+    .image{
+        transform: translateZ(-1px) scale(1.6);
+        background-size: cover;
+        height: 100vh;
+        z-index: -1;
+    }
+    .text{
+        height: 50vh;
+        background-color: #ffffff;
+    }
+    .text h1{
+        color: #0fca47;
+        font-size: 55px;
+        font-family: "楷体","楷体_GB2312";
+        text-align: center;
+    }
+    .heading{
+        z-index: -1;
+        transform: translateY(-20vh) translateZ(1px);
+        color: #fb4f06;
+        font-size: 30px;
+    }
+
+</style>
+
+<body>
+    <div class="shell">
+        <div class="image" style="background-image: url('image/1.jpg');"></div>
+        <div class="heading">
+            <h1>大疙瘩</h1>
+        </div>
+        <div class="text">
+            <h1>负一然</h1>
+        </div>
+
+        <div class="image" style="background-image: url('image/2.jpg');"></div>
+        <div class="heading">
+            <h1>虚~~</h1>
+        </div>
+        <div class="text">
+            <h1>来自一个善良的人~~</h1>
+        </div>
+    </div>
+</body>
+
+</html>
